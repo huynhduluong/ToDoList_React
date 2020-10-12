@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   headerStyle = {
@@ -18,13 +18,13 @@ export default class Header extends Component {
     return (
       <header style={this.headerStyle}>
         <h1>TodoList</h1>
-        {/* <Link style={this.linkStyle} to="/">
+        <Link style={this.linkStyle} to="/">
           Home
         </Link>{" "}
         |{" "}
         <Link style={this.linkStyle} to="/about">
           About
-        </Link> */}
+        </Link>
       </header>
     );
   }
